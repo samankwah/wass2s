@@ -1,0 +1,87 @@
+name: WASS2S
+channels:
+  - hallkjc01
+  - conda-forge
+  - defaults
+
+dependencies:
+  # --- Core ---
+  - python=3.11
+  - pip
+  - numpy=1.26.*
+  - scipy==1.11.3
+  - pandas=2.2.*
+  - scikit-learn=1.5.*
+  - numba>=0.59,<0.61
+  - llvmlite>=0.43,<0.44
+  - statsmodels=0.14.*
+  - xcast
+  - openblas
+
+  # --- IO / Compression / Parallel ---
+  - dask=2024.6.*
+  - distributed=2024.6.*
+  - h5py
+  - h5netcdf
+  - netcdf4
+  - xarray>=2024.6,<2025.1
+  - cf_xarray
+  - cfgrib
+  - eccodes
+  - zarr
+  - blosc
+  - bottleneck
+  - sparse
+  - tqdm
+
+  # --- Spatial / Geo ---
+  - gdal=3.9.*
+  - pyproj
+  - pykrige
+  - cartopy=0.23.*
+
+ 
+
+  # --- Visualization ---
+  - matplotlib==3.7.3
+  - seaborn
+  - bokeh
+  - folium
+  - xhistogram
+
+
+  # --- Bayesian ---
+  - pymc=5.22
+  - arviz=0.21.*
+  - pytensor
+
+  # --- Climate / Weather tools ---
+  - cdsapi=0.7.4
+  - cftime
+  - udunits2
+
+  # --- Utilities / Notebooks ---
+  - ipython
+  - ipykernel
+  - jupyterlab
+  - jupyterlab_widgets
+  - widgetsnbextension
+  - black
+  - rich
+  - click
+  - requests
+  - joblib
+  - yaml
+  - pyyaml
+
+  - pip:
+      - xeofs==3.0.4
+      - hpelm==1.0.10
+      - fitter==1.7.1
+      - minisom==2.3.5
+      - properscoring
+      - xgboost==2.1.*
+      - lightgbm==4.6.0
+      - pymc==5.22.0
+      - arviz==0.21.0
+      - xskillscore==0.0.26

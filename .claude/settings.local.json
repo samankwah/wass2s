@@ -28,7 +28,16 @@
       "Bash(for f in app/pages/0*.py)",
       "Bash(do python -m py_compile \"$f\")",
       "Bash(done)",
-      "Bash(del \"01_Onset_Forecast.py\" \"02_Dry_Spell_Forecast.py\" \"03_Late_Dry_Spell.py\" \"04_Cessation_Forecast.py\" \"05_Length_of_Season.py\" \"06_Seasonal_Rainfall.py\" \"07_Seasonal_Temperature.py\" \"08_Skill_Scores.py\" \"09_Station_Data.py\")"
+      "Bash(del \"01_Onset_Forecast.py\" \"02_Dry_Spell_Forecast.py\" \"03_Late_Dry_Spell.py\" \"04_Cessation_Forecast.py\" \"05_Length_of_Season.py\" \"06_Seasonal_Rainfall.py\" \"07_Seasonal_Temperature.py\" \"08_Skill_Scores.py\" \"09_Station_Data.py\")",
+      "Bash(ren:*)",
+      "WebSearch",
+      "WebFetch(domain:discuss.streamlit.io)",
+      "WebFetch(domain:css-sandbox.streamlit.app)",
+      "WebFetch(domain:github.com)",
+      "Bash(git checkout:*)",
+      "WebFetch(domain:css-tricks.com)",
+      "WebFetch(domain:www.sitepoint.com)",
+      "WebFetch(domain:medium.com)"
     ]
   }
 }
